@@ -1,17 +1,13 @@
-import os
 from twilio.rest import Client
 
-account_sid = os.environ['account_sid']
-auth_token = os.environ['auth_token']
-to_whatsapp_no = os.environ['to_whatsapp_no']
-from_whatsapp_no = os.environ['from_whatsapp_no']
-
+account_sid = 'AC4f1a76e169636c1c414b25eb57118b36'
+auth_token = '90b8c29b1bac7c5f0ef5a64f34d895bb'
 client = Client(account_sid, auth_token)
 
 message = client.messages.create(
-                              body='Code Pushed in main branch of https://github.com/G-Sudarshan/Github-to-Whatsapp-Push-Notifier',
-                              from_='whatsapp:'+from_whatsapp_no,
-                              to='whatsapp:'+to_whatsapp_no
-                          )
+  from_='whatsapp:+14155238886',
+  body='Your appointment is coming up on July 21 at 3PM',
+  to='whatsapp:+6282334626354'
+)
 
-print("Message ID:",message.sid)
+print(message.sid)
