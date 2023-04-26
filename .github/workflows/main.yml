@@ -15,5 +15,5 @@ jobs:
         env:
           account_sid: AC4f1a76e169636c1c414b25eb57118b36
           auth_token: 90b8c29b1bac7c5f0ef5a64f34d895bb
-          to_whatsapp_no: +6282334626354
-          from_whatsapp_no: +16317693684
+          to_whatsapp_no: 6282334626354
+          from_whatsapp_no: 16317693684
